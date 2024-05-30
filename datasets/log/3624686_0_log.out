@@ -1,0 +1,7 @@
+submitit INFO (2024-05-30 18:50:14,568) - Starting with JobEnvironment(job_id=3624686, hostname=veue03, local_rank=0(1), node=0(1), global_rank=0(1))
+submitit INFO (2024-05-30 18:50:14,568) - Loading pickle: /home/usuaris/veu/javier.abella/TFG/datasets/log/3624686_submitted.pkl
+adding to path /home/usuaris/veu/javier.abella/TFG
+Using /home/usuaris/veu/javier.abella/data/CodeGen/code_evaluation/tmp_tests_folder for temporary files.
+Registered languages: {'treesitterlang': <class 'codegen_sources.preprocessing.lang_processors.tree_sitter_processor.TreeSitterLangProcessor'>, 'java': <class 'codegen_sources.preprocessing.lang_processors.java_processor.JavaProcessor'>, 'cpp': <class 'codegen_sources.preprocessing.lang_processors.cpp_processor.CppProcessor'>, 'go': <class 'codegen_sources.preprocessing.lang_processors.go_processor.GoProcessor'>, 'python': <class 'codegen_sources.preprocessing.lang_processors.python_processor.PythonProcessor'>, 'kotlin': <class 'codegen_sources.preprocessing.lang_processors.kotlin_processor.KotlinProcessor'>, 'bytecode': <class 'codegen_sources.preprocessing.lang_processors.bytecode_processor.BytecodeProcessor'>}
+submitit WARNING (2024-05-30 18:50:17,303) - Bypassing signal SIGTERM
+submitit ERROR (2024-05-30 18:50:17,317) - Submitted job triggered an exception

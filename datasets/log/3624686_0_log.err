@@ -1,0 +1,26 @@
+INFO - 05/30/24 18:50:17 - 0:00:00 - Extracting data from /home/usuaris/veu/javier.abella/TFG/datasets/java.0.json.gz
+INFO - 05/30/24 18:50:17 - 0:00:00 - Pre-filtered 0 json lines among 0 (N/A)
+INFO - 05/30/24 18:50:17 - 0:00:00 - Number of lines to process: 0
+INFO - 05/30/24 18:50:17 - 0:00:00 - Time elapsed: 0.04
+submitit WARNING (2024-05-30 18:50:17,303) - Bypassing signal SIGTERM
+WARNING - 05/30/24 18:50:17 - 0:00:00 - Bypassing signal SIGTERM
+submitit ERROR (2024-05-30 18:50:17,317) - Submitted job triggered an exception
+ERROR - 05/30/24 18:50:17 - 0:00:00 - Submitted job triggered an exception
+Traceback (most recent call last):
+  File "/home/usuaris/veu/javier.abella/anaconda3/envs/codegen_3_10/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/usuaris/veu/javier.abella/anaconda3/envs/codegen_3_10/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/usuaris/veu/javier.abella/anaconda3/envs/codegen_3_10/lib/python3.10/site-packages/submitit/core/_submit.py", line 11, in <module>
+    submitit_main()
+  File "/home/usuaris/veu/javier.abella/anaconda3/envs/codegen_3_10/lib/python3.10/site-packages/submitit/core/submission.py", line 76, in submitit_main
+    process_job(args.folder)
+  File "/home/usuaris/veu/javier.abella/anaconda3/envs/codegen_3_10/lib/python3.10/site-packages/submitit/core/submission.py", line 69, in process_job
+    raise error
+  File "/home/usuaris/veu/javier.abella/anaconda3/envs/codegen_3_10/lib/python3.10/site-packages/submitit/core/submission.py", line 55, in process_job
+    result = delayed.result()
+  File "/home/usuaris/veu/javier.abella/anaconda3/envs/codegen_3_10/lib/python3.10/site-packages/submitit/core/utils.py", line 133, in result
+    self._result = self.function(*self.args, **self.kwargs)
+  File "/home/usuaris/veu/javier.abella/TFG/codegen_sources/preprocessing/dataset_modes/dataset_mode.py", line 414, in extract_from_json_and_tokenize
+    f"({number_errors / number_lines:.2%})"
+ZeroDivisionError: division by zero

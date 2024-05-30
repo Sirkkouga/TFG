@@ -11,6 +11,8 @@ from .cpp_processor import CppProcessor as CppProcessor
 from .go_processor import GoProcessor as GoProcessor
 from .java_processor import JavaProcessor as JavaProcessor
 from .python_processor import PythonProcessor as PythonProcessor
+from .kotlin_processor import KotlinProcessor as KotlinProcessor
+from .bytecode_processor import BytecodeProcessor as BytecodeProcessor
 from .python_tree_sitter_processor import (
     PythonTreeSitterProcessor as PythonTreeSitterProcessor,
 )
