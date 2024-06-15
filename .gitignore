@@ -10,3 +10,8 @@ XLM-syml
 *.all
 *.pth
 *.vocab
+*.err
+*.out
+*.bin
+*.log
+*.pkl
