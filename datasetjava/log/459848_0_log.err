@@ -1,0 +1,12 @@
+INFO - 06/13/24 21:12:16 - 0:00:00 - Extracting data from /home/usuaris/veu/javier.abella/TFG/datasetjava/java.1.json.gz
+INFO - 06/13/24 21:12:17 - 0:00:01 - Pre-filtered 0 json lines among 10449 (0.00%)
+INFO - 06/13/24 21:12:17 - 0:00:01 - Number of lines to process: 10449
+INFO - 06/13/24 21:14:05 - 0:01:48 - Time elapsed: 107.56
+WARNING - 06/13/24 21:14:05 - 0:01:48 - Tokenization of /home/usuaris/veu/javier.abella/TFG/datasetjava/java.1.json.gz:0 errors out of 10449 lines(0.00%)
+WARNING - 06/13/24 21:14:05 - 0:01:48 - Tokenization of /home/usuaris/veu/javier.abella/TFG/datasetjava/java.1.json.gz:0 timeouts out of 10449 lines(0.00%)
+WARNING - 06/13/24 21:14:05 - 0:01:48 - Tokenization of /home/usuaris/veu/javier.abella/TFG/datasetjava/java.1.json.gz:0 filtered examples in 10449 lines(0.00%)
+WARNING - 06/13/24 21:14:05 - 0:01:48 - Tokenization of /home/usuaris/veu/javier.abella/TFG/datasetjava/java.1.json.gz:0 multiline codes 10449 lines(0.00%)
+submitit WARNING (2024-06-13 21:14:05,358) - Bypassing signal SIGTERM
+WARNING - 06/13/24 21:14:05 - 0:01:48 - Bypassing signal SIGTERM
+INFO - 06/13/24 21:14:05 - 0:01:48 - Job completed successfully
+INFO - 06/13/24 21:14:05 - 0:01:48 - Exiting after successful completion

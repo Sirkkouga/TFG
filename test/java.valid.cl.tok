@@ -1,0 +1,44 @@
+ public void setResults ( int i , com . google . api . ads . dfp . axis . v201308 . ActivityGroup _value ) { this . results [ i ] = _value ; }
+ @ Nullable @ Override public Object getTransferData ( DataFlavor flavor ) throws UnsupportedFlavorException , IOException { return isDataFlavorSupported ( flavor ) ? myData : null ; }
+ @ Override public void run ( ) { }
+ public void setResults ( com . google . api . ads . dfp . axis . v201308 . ActivityGroup [ ] results ) { this . results = results ; }
+ @ Override public void visitReferenceExpression ( PsiReferenceExpression expression ) { visitExpression ( expression ) ; }
+ public int getStartOffset ( ) { return myStartOffset ; }
+ public boolean isReadyToCombine ( ) { return myReadyToCombine ; }
+ public java . lang . Integer getStartIndex ( ) { return startIndex ; }
+ public void setReadyToCombine ( boolean readyToCombine ) { myReadyToCombine = readyToCombine ; }
+ public void setTotalResultSetSize ( java . lang . Integer totalResultSetSize ) { this . totalResultSetSize = totalResultSetSize ; }
+ public void setStartIndex ( java . lang . Integer startIndex ) { this . startIndex = startIndex ; }
+ public String getLicenseFilename ( ) { String directory = Const . getKettleDirectory ( ) ; String filename = directory + Const . FILE_SEPARATOR + " . licence " ; File dir = new File ( directory ) ; if ( ! dir . exists ( ) ) { try { dir . mkdirs ( ) ; } catch ( Exception e ) { } } return filename ; }
+ @ Override public void visitExpression ( PsiExpression expression ) { boolean info = hasOverflow ( expression , holder . getProject ( ) ) ; if ( info ) { holder . registerProblem ( expression , JavaErrorMessages . message ( " numeric . overflow . in . expression " ) , ProblemHighlightType . GENERIC_ERROR_OR_WARNING ) ; } }
+ @ Nls @ NotNull @ Override public String getDisplayName ( ) { return " Numeric ▁ overflow " ; }
+ String foo ( int i ) { return null ; }
+ public String foo ( ) { return null ; }
+ public String getFilename ( ) { String filename = " " ; String directory = Const . getKettleDirectory ( ) ; switch ( type ) { case TYPE_PROPERTIES_SPOON : case TYPE_PROPERTIES_PAN : filename = directory + Const . FILE_SEPARATOR + " . spoonrc " ; break ; case TYPE_PROPERTIES_CHEF : case TYPE_PROPERTIES_KITCHEN : filename = directory + Const . FILE_SEPARATOR + " . chefrc " ; break ; case TYPE_PROPERTIES_MENU : filename = directory + Const . FILE_SEPARATOR + " . menurc " ; break ; case TYPE_PROPERTIES_PLATE : filename = directory + Const . FILE_SEPARATOR + " . platerc " ; break ; default : break ; } return filename ; }
+ @ Override public String toString ( ) { return STRING_USER_PREFERENCES ; }
+ public boolean fileExists ( ) { File f = new File ( filename ) ; return f . exists ( ) ; }
+ public void setType ( int t ) { type = t ; }
+ public int getEndOffset ( ) { return myEndOffset ; }
+ public java . lang . Integer getTotalResultSetSize ( ) { return totalResultSetSize ; }
+ protected void addDefaultEntries ( ) { if ( ! properties . containsKey ( " JobDialogStyle " ) ) { properties . setProperty ( " JobDialogStyle " , " RESIZE , MAX , MIN " ) ; } }
+ @ NotNull @ Override public String getShortName ( ) { return " NumericOverflow " ; }
+ public boolean isOrange ( String body ) { return " orange " . equalsIgnoreCase ( body ) ; }
+ protected void createLogChannel ( ) { log = new LogChannel ( STRING_USER_PREFERENCES ) ; }
+ protected void init ( ) { createLogChannel ( ) ; properties = new Properties ( ) ; pluginHistory = new ArrayList < ObjectUsageCount > ( ) ; loadProps ( ) ; addDefaultEntries ( ) ; loadPluginHistory ( ) ; }
+ public com . google . api . ads . dfp . axis . v201308 . ActivityGroup [ ] getResults ( ) { return results ; }
+ public boolean isApple ( String body ) { return " apple " . equalsIgnoreCase ( body ) ; }
+ public synchronized boolean equals ( java . lang . Object obj ) { if ( ! ( obj instanceof ActivityGroupPage ) ) return false ; ActivityGroupPage other = ( ActivityGroupPage ) obj ; if ( obj == null ) return false ; if ( this == obj ) return true ; if ( __equalsCalc != null ) { return ( __equalsCalc == obj ) ; } __equalsCalc = obj ; boolean _equals ; _equals = true && ( ( this . totalResultSetSize == null && other . getTotalResultSetSize ( ) == null ) || ( this . totalResultSetSize != null && this . totalResultSetSize . equals ( other . getTotalResultSetSize ( ) ) ) ) && ( ( this . startIndex == null && other . getStartIndex ( ) == null ) || ( this . startIndex != null && this . startIndex . equals ( other . getStartIndex ( ) ) ) ) && ( ( this . results == null && other . getResults ( ) == null ) || ( this . results != null && java . util . Arrays . equals ( this . results , other . getResults ( ) ) ) ) ; __equalsCalc = null ; return _equals ; }
+ @ Nls @ NotNull @ Override public String getGroupDisplayName ( ) { return GroupNames . NUMERIC_GROUP_NAME ; }
+ @ Override public DataFlavor [ ] getTransferDataFlavors ( ) { return DATA_FLAVORS ; }
+ @ Override public boolean isDataFlavorSupported ( DataFlavor flavor ) { return flavor == DataFlavor . stringFlavor ; }
+ private void m ( ) { Ru < caret > nnable r = new Runnable ( ) { @ Override public void run ( ) { } } ; }
+ @ Nullable public Document getDocument ( ) { return myDocument . get ( ) ; }
+ @ Override public String toString ( ) { return " data = ' " + myData + " ' , ▁ startOffset = " + myStartOffset + " , ▁ endOffset = " + myEndOffset + " , ▁ cut = " + myCut ; }
+ public com . google . api . ads . dfp . axis . v201308 . ActivityGroup getResults ( int i ) { return this . results [ i ] ; }
+ @ NotNull @ Override public PsiElementVisitor buildVisitor ( @ NotNull final ProblemsHolder holder , boolean isOnTheFly ) { return new JavaElementVisitor ( ) { @ Override public void visitReferenceExpression ( PsiReferenceExpression expression ) { visitExpression ( expression ) ; } @ Override public void visitExpression ( PsiExpression expression ) { boolean info = hasOverflow ( expression , holder . getProject ( ) ) ; if ( info ) { holder . registerProblem ( expression , JavaErrorMessages . message ( " numeric . overflow . in . expression " ) , ProblemHighlightType . GENERIC_ERROR_OR_WARNING ) ; } } } ; }
+ public boolean loadProps ( ) { try { FileInputStream fis = new FileInputStream ( filename ) ; try { properties . load ( fis ) ; } finally { try { fis . close ( ) ; } catch ( IOException ignored ) { } } } catch ( Exception e ) { return false ; } return true ; }
+ public boolean isCut ( ) { return myCut ; }
+ public int getType ( ) { return type ; }
+ public String tostring ( ) { return String . valueOf ( m_bar == 3 ) ; }
+ public synchronized int hashCode ( ) { if ( __hashCodeCalc ) { return 0 ; } __hashCodeCalc = true ; int _hashCode = 1 ; if ( getTotalResultSetSize ( ) != null ) { _hashCode += getTotalResultSetSize ( ) . hashCode ( ) ; } if ( getStartIndex ( ) != null ) { _hashCode += getStartIndex ( ) . hashCode ( ) ; } if ( getResults ( ) != null ) { for ( int i = 0 ; i < java . lang . reflect . Array . getLength ( getResults ( ) ) ; i ++ ) { java . lang . Object obj = java . lang . reflect . Array . get ( getResults ( ) , i ) ; if ( obj != null && ! obj . getClass ( ) . isArray ( ) ) { _hashCode += obj . hashCode ( ) ; } } } __hashCodeCalc = false ; return _hashCode ; }
+ String foo ( Foo foo ) { return null ; }

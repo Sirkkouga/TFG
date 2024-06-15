@@ -1,0 +1,48 @@
+submitit INFO (2024-06-13 21:12:14,864) - Starting with JobEnvironment(job_id=459848, hostname=veuc01, local_rank=0(1), node=0(1), global_rank=0(1))
+submitit INFO (2024-06-13 21:12:14,864) - Loading pickle: /home/usuaris/veu/javier.abella/TFG/datasetjava/log/459848_submitted.pkl
+{}
+adding to path /home/usuaris/veu/javier.abella/TFG
+Using /home/usuaris/veu/javier.abella/data/CodeGen/code_evaluation/tmp_tests_folder for temporary files.
+Lang processors:  {'java': <codegen_sources.preprocessing.lang_processors.java_processor.JavaProcessor object at 0x7f49e2b1a3b0>}
+Lang processors:  {'java': <codegen_sources.preprocessing.lang_processors.java_processor.JavaProcessor object at 0x7f49e2b1a2c0>}
+Lang processors:  {'java': <codegen_sources.preprocessing.lang_processors.java_processor.JavaProcessor object at 0x7f49e2b1a4a0>}
+Lang processors:  {'java': <codegen_sources.preprocessing.lang_processors.java_processor.JavaProcessor object at 0x7f49e2b1a590>}
+Lang processors:  {'java': <codegen_sources.preprocessing.lang_processors.java_processor.JavaProcessor object at 0x7f49e2b1a680>}
+Lang processors:  {'java': <codegen_sources.preprocessing.lang_processors.java_processor.JavaProcessor object at 0x7f49e2b1a770>}
+Lang processors:  {'java': <codegen_sources.preprocessing.lang_processors.java_processor.JavaProcessor object at 0x7f49e2b1a860>}
+Lang processors:  {'java': <codegen_sources.preprocessing.lang_processors.java_processor.JavaProcessor object at 0x7f49e2b1a950>}
+Lang processors:  {'java': <codegen_sources.preprocessing.lang_processors.java_processor.JavaProcessor object at 0x7f49e2b1aa40>}
+Lang processors:  {'java': <codegen_sources.preprocessing.lang_processors.java_processor.JavaProcessor object at 0x7f49e2b1ac20>}
+Lang processors:  {'java': <codegen_sources.preprocessing.lang_processors.java_processor.JavaProcessor object at 0x7f49e2b1ad10>}
+Lang processors:  {'java': <codegen_sources.preprocessing.lang_processors.java_processor.JavaProcessor object at 0x7f49e2b1ab30>}
+Lang processors:  {'java': <codegen_sources.preprocessing.lang_processors.java_processor.JavaProcessor object at 0x7f49e2b1aef0>}
+Lang processors:  {'java': <codegen_sources.preprocessing.lang_processors.java_processor.JavaProcessor object at 0x7f49e2b1ae00>}
+Lang processors:  {'java': <codegen_sources.preprocessing.lang_processors.java_processor.JavaProcessor object at 0x7f49e2b1afe0>}
+Lang processors:  {'java': <codegen_sources.preprocessing.lang_processors.java_processor.JavaProcessor object at 0x7f49e2b1b1c0>}
+Lang processors:  {'java': <codegen_sources.preprocessing.lang_processors.java_processor.JavaProcessor object at 0x7f49e2b1b0d0>}
+Lang processors:  {'java': <codegen_sources.preprocessing.lang_processors.java_processor.JavaProcessor object at 0x7f49e2b1b3a0>}
+Lang processors:  {'java': <codegen_sources.preprocessing.lang_processors.java_processor.JavaProcessor object at 0x7f49e2b1b2b0>}
+Lang processors:  {'java': <codegen_sources.preprocessing.lang_processors.java_processor.JavaProcessor object at 0x7f49e2b1b490>}
+Lang processors:  {'java': <codegen_sources.preprocessing.lang_processors.java_processor.JavaProcessor object at 0x7f49e2b1b760>}
+Lang processors:  {'java': <codegen_sources.preprocessing.lang_processors.java_processor.JavaProcessor object at 0x7f49e2b1b670>}
+Lang processors:  {'java': <codegen_sources.preprocessing.lang_processors.java_processor.JavaProcessor object at 0x7f49e2b1b580>}
+Lang processors:  {'java': <codegen_sources.preprocessing.lang_processors.java_processor.JavaProcessor object at 0x7f49e2b1b850>}
+Lang processors:  {'java': <codegen_sources.preprocessing.lang_processors.java_processor.JavaProcessor object at 0x7f49e2b1b940>}
+Lang processors:  {'java': <codegen_sources.preprocessing.lang_processors.java_processor.JavaProcessor object at 0x7f49e2b1ba30>}
+Lang processors:  {'java': <codegen_sources.preprocessing.lang_processors.java_processor.JavaProcessor object at 0x7f49e2b1bb20>}
+Lang processors:  {'java': <codegen_sources.preprocessing.lang_processors.java_processor.JavaProcessor object at 0x7f49e2b1bd00>}
+Lang processors:  {'java': <codegen_sources.preprocessing.lang_processors.java_processor.JavaProcessor object at 0x7f49e2b1bc10>}
+Lang processors:  {'java': <codegen_sources.preprocessing.lang_processors.java_processor.JavaProcessor object at 0x7f49e2b1bee0>}
+Lang processors:  {'java': <codegen_sources.preprocessing.lang_processors.java_processor.JavaProcessor object at 0x7f49e2b1bdf0>}
+Lang processors:  {'java': <codegen_sources.preprocessing.lang_processors.java_processor.JavaProcessor object at 0x7f49e200c100>}
+Lang processors:  {'java': <codegen_sources.preprocessing.lang_processors.java_processor.JavaProcessor object at 0x7f49e2b1bfd0>}
+Lang processors:  {'java': <codegen_sources.preprocessing.lang_processors.java_processor.JavaProcessor object at 0x7f49e200c2e0>}
+Lang processors:  {'java': <codegen_sources.preprocessing.lang_processors.java_processor.JavaProcessor object at 0x7f49e200c1f0>}
+Lang processors:  {'java': <codegen_sources.preprocessing.lang_processors.java_processor.JavaProcessor object at 0x7f49e200c3d0>}
+Lang processors:  {'java': <codegen_sources.preprocessing.lang_processors.java_processor.JavaProcessor object at 0x7f49e200c4c0>}
+Lang processors:  {'java': <codegen_sources.preprocessing.lang_processors.java_processor.JavaProcessor object at 0x7f49e200c6a0>}
+Lang processors:  {'java': <codegen_sources.preprocessing.lang_processors.java_processor.JavaProcessor object at 0x7f49e200c5b0>}
+Lang processors:  {'java': <codegen_sources.preprocessing.lang_processors.java_processor.JavaProcessor object at 0x7f49e200c790>}
+submitit WARNING (2024-06-13 21:14:05,358) - Bypassing signal SIGTERM
+submitit INFO (2024-06-13 21:14:05,402) - Job completed successfully
+submitit INFO (2024-06-13 21:14:05,406) - Exiting after successful completion

@@ -1,0 +1,47 @@
+submitit INFO (2024-06-13 22:24:51,317) - Starting with JobEnvironment(job_id=465198, hostname=veuc01, local_rank=0(1), node=0(1), global_rank=0(1))
+submitit INFO (2024-06-13 22:24:51,318) - Loading pickle: /home/usuaris/veu/javier.abella/TFG/datasetbytecode/log/465198_submitted.pkl
+{}
+adding to path /home/usuaris/veu/javier.abella/TFG
+Using /home/usuaris/veu/javier.abella/data/CodeGen/code_evaluation/tmp_tests_folder for temporary files.
+Lang processors:  {'bytecode': <codegen_sources.preprocessing.lang_processors.bytecode_processor.BytecodeProcessor object at 0x7f8931844cd0>}
+Lang processors:  {'bytecode': <codegen_sources.preprocessing.lang_processors.bytecode_processor.BytecodeProcessor object at 0x7f8931844250>}
+Lang processors:  {'bytecode': <codegen_sources.preprocessing.lang_processors.bytecode_processor.BytecodeProcessor object at 0x7f8931845ae0>}
+Lang processors:  {'bytecode': <codegen_sources.preprocessing.lang_processors.bytecode_processor.BytecodeProcessor object at 0x7f8931845810>}
+Lang processors:  {'bytecode': <codegen_sources.preprocessing.lang_processors.bytecode_processor.BytecodeProcessor object at 0x7f8931844070>}
+Lang processors:  {'bytecode': <codegen_sources.preprocessing.lang_processors.bytecode_processor.BytecodeProcessor object at 0x7f8931845b70>}
+Lang processors:  {'bytecode': <codegen_sources.preprocessing.lang_processors.bytecode_processor.BytecodeProcessor object at 0x7f8931845780>}
+Lang processors:  {'bytecode': <codegen_sources.preprocessing.lang_processors.bytecode_processor.BytecodeProcessor object at 0x7f8931845c90>}
+Lang processors:  {'bytecode': <codegen_sources.preprocessing.lang_processors.bytecode_processor.BytecodeProcessor object at 0x7f8931845cc0>}
+Lang processors:  {'bytecode': <codegen_sources.preprocessing.lang_processors.bytecode_processor.BytecodeProcessor object at 0x7f89318446a0>}
+Lang processors:  {'bytecode': <codegen_sources.preprocessing.lang_processors.bytecode_processor.BytecodeProcessor object at 0x7f8931844bb0>}
+Lang processors:  {'bytecode': <codegen_sources.preprocessing.lang_processors.bytecode_processor.BytecodeProcessor object at 0x7f8931845ea0>}
+Lang processors:  {'bytecode': <codegen_sources.preprocessing.lang_processors.bytecode_processor.BytecodeProcessor object at 0x7f8931844760>}
+Lang processors:  {'bytecode': <codegen_sources.preprocessing.lang_processors.bytecode_processor.BytecodeProcessor object at 0x7f8931845e10>}
+Lang processors:  {'bytecode': <codegen_sources.preprocessing.lang_processors.bytecode_processor.BytecodeProcessor object at 0x7f8931845f90>}
+Lang processors:  {'bytecode': <codegen_sources.preprocessing.lang_processors.bytecode_processor.BytecodeProcessor object at 0x7f8931845960>}
+Lang processors:  {'bytecode': <codegen_sources.preprocessing.lang_processors.bytecode_processor.BytecodeProcessor object at 0x7f8931844c40>}
+Lang processors:  {'bytecode': <codegen_sources.preprocessing.lang_processors.bytecode_processor.BytecodeProcessor object at 0x7f89318456c0>}
+Lang processors:  {'bytecode': <codegen_sources.preprocessing.lang_processors.bytecode_processor.BytecodeProcessor object at 0x7f8931845a80>}
+Lang processors:  {'bytecode': <codegen_sources.preprocessing.lang_processors.bytecode_processor.BytecodeProcessor object at 0x7f8931a37970>}
+Lang processors:  {'bytecode': <codegen_sources.preprocessing.lang_processors.bytecode_processor.BytecodeProcessor object at 0x7f8931a374f0>}
+Lang processors:  {'bytecode': <codegen_sources.preprocessing.lang_processors.bytecode_processor.BytecodeProcessor object at 0x7f8931a37670>}
+Lang processors:  {'bytecode': <codegen_sources.preprocessing.lang_processors.bytecode_processor.BytecodeProcessor object at 0x7f8931a359f0>}
+Lang processors:  {'bytecode': <codegen_sources.preprocessing.lang_processors.bytecode_processor.BytecodeProcessor object at 0x7f8931a378e0>}
+Lang processors:  {'bytecode': <codegen_sources.preprocessing.lang_processors.bytecode_processor.BytecodeProcessor object at 0x7f8931a37340>}
+Lang processors:  {'bytecode': <codegen_sources.preprocessing.lang_processors.bytecode_processor.BytecodeProcessor object at 0x7f8931a371c0>}
+Lang processors:  {'bytecode': <codegen_sources.preprocessing.lang_processors.bytecode_processor.BytecodeProcessor object at 0x7f8931a36f80>}
+Lang processors:  {'bytecode': <codegen_sources.preprocessing.lang_processors.bytecode_processor.BytecodeProcessor object at 0x7f8931a36e30>}
+Lang processors:  {'bytecode': <codegen_sources.preprocessing.lang_processors.bytecode_processor.BytecodeProcessor object at 0x7f8931a37100>}
+Lang processors:  {'bytecode': <codegen_sources.preprocessing.lang_processors.bytecode_processor.BytecodeProcessor object at 0x7f8931a374c0>}
+Lang processors:  {'bytecode': <codegen_sources.preprocessing.lang_processors.bytecode_processor.BytecodeProcessor object at 0x7f8931a35ab0>}
+Lang processors:  {'bytecode': <codegen_sources.preprocessing.lang_processors.bytecode_processor.BytecodeProcessor object at 0x7f8931a37520>}
+Lang processors:  {'bytecode': <codegen_sources.preprocessing.lang_processors.bytecode_processor.BytecodeProcessor object at 0x7f8931a36aa0>}
+Lang processors:  {'bytecode': <codegen_sources.preprocessing.lang_processors.bytecode_processor.BytecodeProcessor object at 0x7f8931a37f10>}
+Lang processors:  {'bytecode': <codegen_sources.preprocessing.lang_processors.bytecode_processor.BytecodeProcessor object at 0x7f8931a37bb0>}
+Lang processors:  {'bytecode': <codegen_sources.preprocessing.lang_processors.bytecode_processor.BytecodeProcessor object at 0x7f8931a37d90>}
+Lang processors:  {'bytecode': <codegen_sources.preprocessing.lang_processors.bytecode_processor.BytecodeProcessor object at 0x7f8931a37e20>}
+Lang processors:  {'bytecode': <codegen_sources.preprocessing.lang_processors.bytecode_processor.BytecodeProcessor object at 0x7f8931a37d30>}
+Lang processors:  {'bytecode': <codegen_sources.preprocessing.lang_processors.bytecode_processor.BytecodeProcessor object at 0x7f8931a37ee0>}
+Lang processors:  {'bytecode': <codegen_sources.preprocessing.lang_processors.bytecode_processor.BytecodeProcessor object at 0x7f8931a36b00>}
+submitit INFO (2024-06-13 22:25:36,680) - Job completed successfully
+submitit INFO (2024-06-13 22:25:36,689) - Exiting after successful completion

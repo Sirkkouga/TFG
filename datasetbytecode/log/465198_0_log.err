@@ -1,0 +1,10 @@
+INFO - 06/13/24 22:24:53 - 0:00:00 - Extracting data from /home/usuaris/veu/javier.abella/TFG/datasetbytecode/bytecode.1.json.gz
+INFO - 06/13/24 22:24:55 - 0:00:02 - Pre-filtered 0 json lines among 51911 (0.00%)
+INFO - 06/13/24 22:24:55 - 0:00:02 - Number of lines to process: 51911
+INFO - 06/13/24 22:25:36 - 0:00:43 - Time elapsed: 40.75
+WARNING - 06/13/24 22:25:36 - 0:00:43 - Tokenization of /home/usuaris/veu/javier.abella/TFG/datasetbytecode/bytecode.1.json.gz:0 errors out of 51911 lines(0.00%)
+WARNING - 06/13/24 22:25:36 - 0:00:43 - Tokenization of /home/usuaris/veu/javier.abella/TFG/datasetbytecode/bytecode.1.json.gz:0 timeouts out of 51911 lines(0.00%)
+WARNING - 06/13/24 22:25:36 - 0:00:43 - Tokenization of /home/usuaris/veu/javier.abella/TFG/datasetbytecode/bytecode.1.json.gz:0 filtered examples in 51911 lines(0.00%)
+WARNING - 06/13/24 22:25:36 - 0:00:43 - Tokenization of /home/usuaris/veu/javier.abella/TFG/datasetbytecode/bytecode.1.json.gz:0 multiline codes 51911 lines(0.00%)
+INFO - 06/13/24 22:25:36 - 0:00:43 - Job completed successfully
+INFO - 06/13/24 22:25:36 - 0:00:43 - Exiting after successful completion

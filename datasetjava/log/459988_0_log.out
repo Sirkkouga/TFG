@@ -1,0 +1,4 @@
+submitit INFO (2024-06-13 21:14:09,755) - Starting with JobEnvironment(job_id=459988, hostname=veuc01, local_rank=0(1), node=0(1), global_rank=0(1))
+submitit INFO (2024-06-13 21:14:09,755) - Loading pickle: /home/usuaris/veu/javier.abella/TFG/datasetjava/log/459988_submitted.pkl
+submitit INFO (2024-06-13 21:14:17,195) - Job completed successfully
+submitit INFO (2024-06-13 21:14:17,197) - Exiting after successful completion

@@ -1,0 +1,8 @@
+INFO - 06/13/24 21:14:38 - 0:00:00 - Read 1191 words from the vocabulary file.
+
+INFO - 06/13/24 21:14:45 - 0:00:06 - 2759487 words (1191 unique) in 2382 sentences.
+INFO - 06/13/24 21:14:45 - 0:00:06 - 9 unknown words (2 unique), covering 0.00% of the data.
+INFO - 06/13/24 21:14:45 - 0:00:06 - fal@@: 7
+INFO - 06/13/24 21:14:45 - 0:00:06 - missing@@: 2
+INFO - 06/13/24 21:14:45 - 0:00:06 - Job completed successfully
+INFO - 06/13/24 21:14:45 - 0:00:06 - Exiting after successful completion

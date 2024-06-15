@@ -1,1 +1,12 @@
 __pycache__
+
+*.tok
+*.shuf
+*.codes
+*.50gb
+*.log
+XLM-syml  
+*.bpe
+*.all
+*.pth
+*.vocab

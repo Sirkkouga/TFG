@@ -1,0 +1,71 @@
+python: can't open file '/home/usuaris/veu/javier.abella/TFG/myprogram.py': [Errno 2] No such file or directory
+INFO - 05/31/24 16:15:32 - 0:00:00 - Dataset pipeline for /home/usuaris/veu/javier.abella/TFG/testdataset
+
+
+INFO - 05/31/24 16:15:32 - 0:00:00 - ========== Extract and Tokenize ===========
+INFO - 05/31/24 16:15:32 - 0:00:00 - java: tokenizing 1 json files ...: [(PosixPath('/home/usuaris/veu/javier.abella/TFG/testdataset/java.000.json.gz'), 'java')]
+
+
+INFO - 05/31/24 16:15:36 - 0:00:04 - ========== Deduplicate and Split ===========
+INFO - 05/31/24 16:15:36 - 0:00:04 - all files java.*[0-9].sa.tok regrouped in /home/usuaris/veu/javier.abella/TFG/testdataset/java.all.sa.tok .
+INFO - 05/31/24 16:15:36 - 0:00:04 - all files java.*[0-9].cl.tok regrouped in /home/usuaris/veu/javier.abella/TFG/testdataset/java.all.cl.tok .
+INFO - 05/31/24 16:15:36 - 0:00:04 - shuffling 2 files individualy: java.all.sa.tok, java.all.cl.tok
+INFO - 05/31/24 16:15:36 - 0:00:04 - java: Deduplication on ['sa', 'cl'].
+INFO - 05/31/24 16:15:36 - 0:00:04 - java: Duplicated lines for sa: 2 / 39
+INFO - 05/31/24 16:15:36 - 0:00:04 - java: valid.sa -> 0 lines
+INFO - 05/31/24 16:15:36 - 0:00:04 - java: test.sa -> 0 lines
+INFO - 05/31/24 16:15:36 - 0:00:04 - java: train.sa.0 -> 37 lines
+INFO - 05/31/24 16:15:36 - 0:00:04 - java: Duplicated lines for cl: 3 / 258
+INFO - 05/31/24 16:15:36 - 0:00:04 - java: valid.cl -> 0 lines
+INFO - 05/31/24 16:15:36 - 0:00:04 - java: test.cl -> 0 lines
+INFO - 05/31/24 16:15:36 - 0:00:04 - java: train.cl.0 -> 255 lines
+INFO - 05/31/24 16:15:36 - 0:00:04 - Sucessfully regroup, deduplicate and split tokenized data into a train/valid/test sets.
+
+
+INFO - 05/31/24 16:15:36 - 0:00:04 - ========== Learn BPE ===========
+INFO - 05/31/24 16:15:36 - 0:00:04 - Subset of ['java.all.sa.tok.shuf', 'java.all.cl.tok.shuf'] created at: java.sa-cl.tok.shuf.50gb. Size=(0.00GB).
+INFO - 05/31/24 16:15:36 - 0:00:04 - training bpe on /home/usuaris/veu/javier.abella/TFG/testdataset/java.sa-cl.tok.shuf.50gb.shuf...
+INFO - 05/31/24 16:15:39 - 0:00:07 - Successfully learnt bpe. Bpe codes stored in /home/usuaris/veu/javier.abella/TFG/testdataset/java.sa-cl.codes.
+
+
+INFO - 05/31/24 16:15:39 - 0:00:07 - ========== Apply BPE ===========
+INFO - 05/31/24 16:15:39 - 0:00:07 - Applying BPE on /home/usuaris/veu/javier.abella/TFG/testdataset/java.train.cl.0.tok ...
+INFO - 05/31/24 16:15:39 - 0:00:07 - Applying BPE on /home/usuaris/veu/javier.abella/TFG/testdataset/java.train.sa.0.tok ...
+WARNING - 05/31/24 16:15:39 - 0:00:07 - /home/usuaris/veu/javier.abella/TFG/testdataset/java.valid.cl.tok is not a valid file, cannot to apply BPE on it.
+WARNING - 05/31/24 16:15:39 - 0:00:07 - /home/usuaris/veu/javier.abella/TFG/testdataset/java.valid.sa.tok is not a valid file, cannot to apply BPE on it.
+WARNING - 05/31/24 16:15:39 - 0:00:07 - /home/usuaris/veu/javier.abella/TFG/testdataset/java.test.cl.tok is not a valid file, cannot to apply BPE on it.
+WARNING - 05/31/24 16:15:39 - 0:00:07 - /home/usuaris/veu/javier.abella/TFG/testdataset/java.test.sa.tok is not a valid file, cannot to apply BPE on it.
+Traceback (most recent call last):
+  File "/home/usuaris/veu/javier.abella/anaconda3/envs/codegen_3_10/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/usuaris/veu/javier.abella/anaconda3/envs/codegen_3_10/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/usuaris/veu/javier.abella/TFG/codegen_sources/preprocessing/preprocess.py", line 212, in <module>
+    preprocess(args)
+  File "/home/usuaris/veu/javier.abella/TFG/codegen_sources/preprocessing/preprocess.py", line 88, in preprocess
+    dataset.apply_bpe(
+  File "/home/usuaris/veu/javier.abella/TFG/codegen_sources/preprocessing/dataset_modes/dataset_mode.py", line 750, in apply_bpe
+    job.result()
+  File "/home/usuaris/veu/javier.abella/anaconda3/envs/codegen_3_10/lib/python3.10/site-packages/submitit/core/core.py", line 266, in result
+    r = self.results()
+  File "/home/usuaris/veu/javier.abella/anaconda3/envs/codegen_3_10/lib/python3.10/site-packages/submitit/core/core.py", line 294, in results
+    raise job_exception  # pylint: disable=raising-bad-type
+submitit.core.utils.FailedJobError: Job (task=0) failed during processing with trace:
+----------------------
+Traceback (most recent call last):
+  File "/home/usuaris/veu/javier.abella/anaconda3/envs/codegen_3_10/lib/python3.10/site-packages/submitit/core/submission.py", line 55, in process_job
+    result = delayed.result()
+  File "/home/usuaris/veu/javier.abella/anaconda3/envs/codegen_3_10/lib/python3.10/site-packages/submitit/core/utils.py", line 133, in result
+    self._result = self.function(*self.args, **self.kwargs)
+  File "/home/usuaris/veu/javier.abella/TFG/codegen_sources/preprocessing/bpe_modes/fast_bpe_mode.py", line 96, in apply_bpe_file
+    Path(output).is_file() and process.returncode == 0
+AssertionError: failed to apply bpe on /home/usuaris/veu/javier.abella/TFG/testdataset/java.train.cl.0.tok, command: 
+ /home/usuaris/veu/javier.abella/TFG/fastBPE/fast applybpe /home/usuaris/veu/javier.abella/TFG/testdataset/java.train.cl.0.bpe /home/usuaris/veu/javier.abella/TFG/testdataset/java.train.cl.0.tok /home/usuaris/veu/javier.abella/TFG/testdataset/java.sa-cl.codes 
+
+----------------------
+You can check full logs with 'job.stderr(0)' and 'job.stdout(0)'or at paths:
+  - /home/usuaris/veu/javier.abella/TFG/testdataset/log/515312_0_log.err
+  - /home/usuaris/veu/javier.abella/TFG/testdataset/log/515312_0_log.out
+adding to path /home/usuaris/veu/javier.abella/TFG
+Using /home/usuaris/veu/javier.abella/data/CodeGen/code_evaluation/tmp_tests_folder for temporary files.
+Registered languages: {'treesitterlang': <class 'codegen_sources.preprocessing.lang_processors.tree_sitter_processor.TreeSitterLangProcessor'>, 'java': <class 'codegen_sources.preprocessing.lang_processors.java_processor.JavaProcessor'>, 'cpp': <class 'codegen_sources.preprocessing.lang_processors.cpp_processor.CppProcessor'>, 'go': <class 'codegen_sources.preprocessing.lang_processors.go_processor.GoProcessor'>, 'python': <class 'codegen_sources.preprocessing.lang_processors.python_processor.PythonProcessor'>, 'kotlin': <class 'codegen_sources.preprocessing.lang_processors.kotlin_processor.KotlinProcessor'>, 'bytecode': <class 'codegen_sources.preprocessing.lang_processors.bytecode_processor.BytecodeProcessor'>}

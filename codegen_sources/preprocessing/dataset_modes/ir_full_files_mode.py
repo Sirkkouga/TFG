@@ -40,6 +40,7 @@ class IRFullFilesMode(DatasetMode):
         nb_train_split: int = 8,
         keep_comments: bool = False,
         repo_split: bool = True,
+        
     ):
         super().__init__(
             folder=folder,
@@ -49,6 +50,8 @@ class IRFullFilesMode(DatasetMode):
             nb_train_split=nb_train_split,
             keep_comments=keep_comments,
             repo_split=repo_split,
+            parallel_dataset = True,
+            suffixes=IR_SUFFIXES,
         )
         self.id_is_line = False
 

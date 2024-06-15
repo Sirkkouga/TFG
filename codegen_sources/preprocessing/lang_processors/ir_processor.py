@@ -10,7 +10,6 @@ from .lang_processor import LangProcessor, NEWLINE_TOK
 
 IR_LANGUAGE_NAME = "ir"
 
-
 class IRProcessor(LangProcessor):
     def tokenize_code(
         self, code: str, keep_comments: bool = False, process_strings: bool = True

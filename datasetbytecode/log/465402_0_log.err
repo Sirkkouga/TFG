@@ -1,0 +1,14 @@
+INFO - 06/13/24 22:27:09 - 0:00:00 - Read 1155 words from the vocabulary file.
+
+INFO - 06/13/24 22:27:27 - 0:00:18 - 8546774 words (1155 unique) in 11453 sentences.
+INFO - 06/13/24 22:27:27 - 0:00:18 - 33 unknown words (8 unique), covering 0.00% of the data.
+INFO - 06/13/24 22:27:27 - 0:00:18 - aloa@@: 9
+INFO - 06/13/24 22:27:27 - 0:00:18 - =: 6
+INFO - 06/13/24 22:27:27 - 0:00:18 - =@@: 6
+INFO - 06/13/24 22:27:27 - 0:00:18 - U: 5
+INFO - 06/13/24 22:27:27 - 0:00:18 - aload_@@: 4
+INFO - 06/13/24 22:27:27 - 0:00:18 - iloa@@: 1
+INFO - 06/13/24 22:27:27 - 0:00:18 - ifnon@@: 1
+INFO - 06/13/24 22:27:27 - 0:00:18 - aconst_@@: 1
+INFO - 06/13/24 22:27:27 - 0:00:18 - Job completed successfully
+INFO - 06/13/24 22:27:27 - 0:00:18 - Exiting after successful completion

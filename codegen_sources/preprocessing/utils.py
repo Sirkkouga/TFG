@@ -39,8 +39,10 @@ def bool_flag(s):
 
 def is_valid_file(filepath: tp.Optional[PathLike]) -> bool:
     if filepath is None:
+        logger.info("filepath is none")
         return False
     if isinstance(filepath, str):
+        logger.info("filepath is a string")
         filepath = Path(filepath)
     else:
         assert isinstance(filepath, Path)

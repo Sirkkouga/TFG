@@ -13,7 +13,7 @@ NEWLINE_TOK = "NEW_LINE"  # different name to avoid confusions by the tokenizer
 
 class LangProcessor(ABC):
     processors: tp.Dict[str, tp.Type["LangProcessor"]] = {}
-
+    print(processors)
     @classmethod
     def _language(cls) -> str:
         # note: properties only work on instances, not on the class

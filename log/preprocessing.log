@@ -1,0 +1,57 @@
+INFO - 06/13/24 22:24:50 - 0:00:00 - Dataset pipeline for /home/usuaris/veu/javier.abella/TFG/datasetbytecode
+
+
+INFO - 06/13/24 22:24:50 - 0:00:00 - ========== Extract and Tokenize ===========
+INFO - 06/13/24 22:24:50 - 0:00:00 - bytecode: tokenizing 1 json files ...: [(PosixPath('/home/usuaris/veu/javier.abella/TFG/datasetbytecode/bytecode.1.json.gz'), 'bytecode')]
+
+
+INFO - 06/13/24 22:25:37 - 0:00:47 - ========== Deduplicate and Split ===========
+INFO - 06/13/24 22:25:37 - 0:00:47 - antes de regrupar
+INFO - 06/13/24 22:25:40 - 0:00:50 - all files bytecode.*[0-9].monolingual.tok regrouped in /home/usuaris/veu/javier.abella/TFG/datasetbytecode/bytecode.all.monolingual.tok .
+INFO - 06/13/24 22:25:40 - 0:00:50 - tras regrupar
+INFO - 06/13/24 22:25:40 - 0:00:50 - shuffling 1 files individualy: bytecode.all.monolingual.tok
+INFO - 06/13/24 22:25:42 - 0:00:51 - bytecode: Deduplication on ['monolingual'].
+INFO - 06/13/24 22:25:43 - 0:00:52 - bytecode: Duplicated lines for monolingual: 462 / 51911
+INFO - 06/13/24 22:25:44 - 0:00:54 - bytecode: valid.monolingual -> 11453 lines
+INFO - 06/13/24 22:25:44 - 0:00:54 - bytecode: test.monolingual -> 7132 lines
+INFO - 06/13/24 22:25:44 - 0:00:54 - bytecode: train.monolingual.0 -> 32864 lines
+INFO - 06/13/24 22:25:44 - 0:00:54 - Sucessfully regroup, deduplicate and split tokenized data into a train/valid/test sets.
+
+
+INFO - 06/13/24 22:25:44 - 0:00:54 - ========== Learn BPE ===========
+INFO - 06/13/24 22:25:44 - 0:00:54 - filepath is none
+INFO - 06/13/24 22:25:46 - 0:00:55 - Subset of ['bytecode.all.monolingual.tok.shuf'] created at: bytecode.monolingual.tok.shuf.50gb. Size=(0.14GB).
+INFO - 06/13/24 22:25:47 - 0:00:57 - training bpe on /home/usuaris/veu/javier.abella/TFG/datasetbytecode/bytecode.monolingual.tok.shuf.50gb.shuf...
+INFO - 06/13/24 22:26:20 - 0:01:30 - Successfully learnt bpe. Bpe codes stored in /home/usuaris/veu/javier.abella/TFG/datasetbytecode/bytecode.monolingual.codes.
+
+
+INFO - 06/13/24 22:26:20 - 0:01:30 - ========== Apply BPE ===========
+INFO - 06/13/24 22:26:20 - 0:01:30 - Applying BPE on /home/usuaris/veu/javier.abella/TFG/datasetbytecode/bytecode.train.monolingual.0.tok ...
+INFO - 06/13/24 22:26:20 - 0:01:30 - Applying BPE on /home/usuaris/veu/javier.abella/TFG/datasetbytecode/bytecode.valid.monolingual.tok ...
+INFO - 06/13/24 22:26:20 - 0:01:30 - Applying BPE on /home/usuaris/veu/javier.abella/TFG/datasetbytecode/bytecode.test.monolingual.tok ...
+INFO - 06/13/24 22:26:57 - 0:02:06 - BPE done.
+
+
+INFO - 06/13/24 22:26:57 - 0:02:06 - ========== Get VOCAB ===========
+INFO - 06/13/24 22:26:57 - 0:02:06 - filepath is none
+INFO - 06/13/24 22:26:58 - 0:02:08 - Subset of ['bytecode.train.monolingual.0.bpe'] created at: bytecode.train.monolingual.0.20BG.bpe. Size=(0.12GB).
+INFO - 06/13/24 22:26:59 - 0:02:09 - Getting vocab from /home/usuaris/veu/javier.abella/TFG/datasetbytecode/bytecode.train.monolingual.0.20BG.bpe.shuf ...
+INFO - 06/13/24 22:27:04 - 0:02:14 - Successfully got vocab. Vocab stored in /home/usuaris/veu/javier.abella/TFG/datasetbytecode/bytecode.monolingual.vocab.
+
+
+INFO - 06/13/24 22:27:04 - 0:02:14 - ========== Binarize ===========
+INFO - 06/13/24 22:27:04 - 0:02:14 - binarizing /home/usuaris/veu/javier.abella/TFG/datasetbytecode/bytecode.train.monolingual.0.bpe ...
+INFO - 06/13/24 22:27:04 - 0:02:14 - binarizing /home/usuaris/veu/javier.abella/TFG/datasetbytecode/bytecode.train.monolingual.0.20BG.bpe ...
+INFO - 06/13/24 22:27:04 - 0:02:14 - binarizing /home/usuaris/veu/javier.abella/TFG/datasetbytecode/bytecode.valid.monolingual.bpe ...
+INFO - 06/13/24 22:27:04 - 0:02:14 - binarizing /home/usuaris/veu/javier.abella/TFG/datasetbytecode/bytecode.test.monolingual.bpe ...
+INFO - 06/13/24 22:27:45 - 0:02:55 - Binarize done.
+
+
+INFO - 06/13/24 22:27:45 - 0:02:55 - ========== Check and Create symlinks ===========
+INFO - 06/13/24 22:27:45 - 0:02:55 - create symlinks for XLM ...
+INFO - 06/13/24 22:27:45 - 0:02:55 - Check and symlink done.
+{}
+adding to path /home/usuaris/veu/javier.abella/TFG
+Using /home/usuaris/veu/javier.abella/data/CodeGen/code_evaluation/tmp_tests_folder for temporary files.
+Lang processors:  {'bytecode': <codegen_sources.preprocessing.lang_processors.bytecode_processor.BytecodeProcessor object at 0x7fd060bec160>}
+shuffle all tok
