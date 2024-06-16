@@ -269,7 +269,8 @@ class DatasetMode:
                     )
                 except KeyboardInterrupt as e:
                     raise e
-                except:
+                except Exception as e:
+                    logger.error(f"Error parsing line {i} in {input_path}: {e}")
                     pass
         logger.info(
             f"Pre-filtered {pre_filtered} json lines among {pre_filtered + len(lines)} ({pre_filtered / (pre_filtered + len(lines)):.2%})"
@@ -306,6 +307,7 @@ class DatasetMode:
                         try:
                             line_id = "None"
                             line_id, repo, tokenized_data = next(results_for_line)
+                            logger.info(f"Tokenized data for line {line_id}: {tokenized_data}")
                         except StopIteration:
                             break
                         except concurrent.futures.TimeoutError as error:
@@ -389,10 +391,9 @@ class DatasetMode:
                                     tok_files[suffix].write("\n")
                                 except KeyboardInterrupt:
                                     raise
-                                except Exception:
-                                    sys.stderr.write(
-                                        f"Exception writing data: {tok_code}\n"
-                                    )
+                                except Exception as e:
+                                    logger.error(f"Exception writing data: {tok_code} Error: {e}")
+                                
                                     number_errors += 1
                                     continue
                         for suffix, _ in tokenized_data.items():

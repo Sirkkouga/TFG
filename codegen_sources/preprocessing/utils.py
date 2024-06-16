@@ -39,14 +39,21 @@ def bool_flag(s):
 
 def is_valid_file(filepath: tp.Optional[PathLike]) -> bool:
     if filepath is None:
-        logger.info("filepath is none")
+        logger.info("Filepath is None")
         return False
     if isinstance(filepath, str):
-        logger.info("filepath is a string")
+        logger.info(f"Checking file path (str): {filepath}")
         filepath = Path(filepath)
     else:
         assert isinstance(filepath, Path)
+        logger.info(f"Checking file path (Path): {filepath}")
+
+    file_exists = filepath.is_file()
+    file_size = filepath.stat().st_size if file_exists else 0
+
+    logger.info(f"File exists: {file_exists}, File size: {file_size} bytes")
     return filepath.is_file() and filepath.stat().st_size > 0
+
 
 
 def get_nlines(file_path):
