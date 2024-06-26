@@ -41,7 +41,7 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parents[3]))
 print("adding to path", str(Path(__file__).parents[3]))
 
-from ...code_runners import test_runners
+#from ...code_runners import test_runners
 
 logger = getLogger()
 LTensor = torch.LongTensor
@@ -165,7 +165,7 @@ class Trainer:
             self.stopping_criterion = None
             self.best_stopping_criterion = None
 
-        if len(params.st_steps) > 0:
+        '''if len(params.st_steps) > 0:
             self.test_runners = {
                 "python": test_runners.PythonEvosuiteTestRunner(
                     timeout=params.st_test_timeout
@@ -175,7 +175,7 @@ class Trainer:
                 ),
             }
             self.unit_tests = data[f"java_st_unit_tests"]
-
+        '''
         # probability of masking out / randomize / not modify words to predict
         params.pred_probs = torch.FloatTensor(
             [params.word_mask, params.word_keep, params.word_rand]
@@ -1257,11 +1257,13 @@ class Trainer:
         _, loss = model(
             "predict", tensor=tensor, pred_mask=pred_mask, y=y, get_scores=False
         )
+        
         self.stats[
             ("MLM-%s" % lang1) if lang2 is None else ("MLM-%s-%s" % (lang1, lang2))
         ].append(loss.item())
         loss = lambda_coeff * loss
-
+        
+        logger.info(f"Stats: {self.stats}")
         # optimize
         self.optimize(loss)
 
@@ -2210,7 +2212,7 @@ class EncDecTrainer(Trainer):
 
     def get_test_outputs(self, sentences, sent_ids, lang):
         lang = get_programming_language_name(lang)
-        test_runner = self.test_runners[lang]
+        #test_runner = self.test_runners[lang]
         tests = [self.unit_tests[lang][test_id] for test_id in sent_ids]
         assert len(sentences) == len(
             tests

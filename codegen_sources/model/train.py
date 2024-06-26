@@ -895,20 +895,26 @@ def main(params):
         logger.info("============ Starting epoch %i ... ============" % trainer.epoch)
 
         trainer.n_sentences = 0
-
+        
         while trainer.n_sentences < trainer.epoch_size:
             show_example = True if trainer.n_sentences == 0 else False
 
             # CLM steps
             for lang1, lang2 in shuf_order(params.clm_steps, params):
+                #logger.info(lang1)
+                #logger.info (lang2) 
+                #logger.info("clm")
                 trainer.clm_step(
                     lang1, lang2, params.lambda_clm, show_example=show_example
                 )
 
             # MLM steps (also includes TLM if lang2 is not None)
             for lang1, lang2 in shuf_order(params.mlm_steps, params):
+                #logger.info(lang1)
+                #logger.info(lang2) 
+                #logger.info("mlm")
                 trainer.mlm_step(
-                    lang1, lang2, params.lambda_mlm, show_example=show_example
+                lang1, lang2, params.lambda_mlm, show_example=show_example
                 )
 
             # denoising auto-encoder steps
@@ -977,7 +983,7 @@ def main(params):
             trainer.iter()
 
         logger.info("============ End of epoch %i ============" % trainer.epoch)
-
+        
         # evaluate perplexity
         scores = None
         if not params.train_only:

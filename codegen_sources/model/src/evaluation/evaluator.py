@@ -99,7 +99,7 @@ class Evaluator(object):
                 self.evosuite_tests_dico = None
 
     def get_iterator(
-        self, data_set, lang1, lang2=None, stream=False, span=None, subsample=1000,
+        self, data_set, lang1, lang2=None, stream=False, span=None, subsample=1,
     ):
         """
         Create a new iterator for a dataset.
@@ -112,7 +112,7 @@ class Evaluator(object):
             or (lang1, lang2) in self.params.classif_steps
         )
         assert stream is False or lang2 is None
-
+        #logger.info(stream)
         n_sentences = self.params.n_sentences_eval
 
         if lang2 is None or lang2 == lang1:
@@ -121,6 +121,7 @@ class Evaluator(object):
                 iterator = self.data["mono_stream"][key][data_set].get_iterator(
                     shuffle=False, subsample=subsample
                 )
+                #logger.info("entro en mono_Stream")
             else:
                 iterator = self.data["mono"][key][data_set].get_iterator(
                     tokens_per_batch=self.params.eval_tokens_per_batch,
@@ -590,6 +591,7 @@ class Evaluator(object):
         for i, batch in enumerate(
             self.get_iterator(data_set, lang1, lang2, stream=(lang2 is None))
         ):
+            logger.info("Entro in enumerate")
             if i > 50:
                 break
             # batch
@@ -597,6 +599,8 @@ class Evaluator(object):
                 x, lengths = batch
                 positions = None
                 langs = x.clone().fill_(lang1_id) if params.n_langs > 1 else None
+                #logger.info(x)
+                #logger.info(lengths)
             else:
                 (sent1, len1, _, _), (sent2, len2, _, _) = batch
                 x, lengths, positions, langs = concat_batches(
@@ -653,6 +657,8 @@ class Evaluator(object):
         acc_name = "%s_%s_mlm_acc" % (data_set, l1l2)
         scores[ppl_name] = np.exp(xe_loss / n_words) if n_words > 0 else 1e9
         scores[acc_name] = 100.0 * n_valid / n_words if n_words > 0 else 0.0
+        #logger.info(scores)
+        #logger.info(n_words)
 
     def evaluate_classif(self, scores, data_set, lang1, lang2):
         params = self.params

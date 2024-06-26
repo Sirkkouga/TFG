@@ -88,6 +88,8 @@ class StreamDataset(object):
         """
         Return a sentences iterator.
         """
+        #logger.info(self.n_batches)
+        #logger.info(subsample)
         indexes = (np.random.permutation if shuffle else range)(
             self.n_batches // subsample
         )

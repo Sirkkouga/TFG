@@ -233,7 +233,7 @@ def load_mono_data(params, data):
                 data["mono"][lang][splt] = dataset
 
             logger.info("")
-
+    #logger.info(data)
     logger.info("")
 
 
@@ -347,6 +347,10 @@ def check_data_params(params):
     Check datasets parameters.
     """
     # data path
+
+    logger.info(f"Params : {params} " )
+    logger.info(f"Data path vale : {params.data_path}")
+
     assert os.path.isdir(params.data_path), f"Not a directory: {params.data_path}"
 
     if params.eval_tokens_per_batch is None:
@@ -481,7 +485,7 @@ def check_data_params(params):
     assert len(params.bt_steps) == len(set(params.bt_steps))
     assert len(params.bt_steps) == 0 or not params.encoder_only
     params.bt_src_langs = [l1 for l1, _, _ in params.bt_steps]
-
+    
     # self-training steps
     params.st_steps = sorted(
         [

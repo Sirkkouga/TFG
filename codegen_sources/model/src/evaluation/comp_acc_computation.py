@@ -14,7 +14,7 @@ from logging import getLogger
 from pathlib import Path
 
 from codegen_sources import code_runners
-from codegen_sources.code_runners import test_runners
+# from codegen_sources.code_runners import test_runners
 from ..utils import (
     REPO_ROOT,
     read_file_lines,
@@ -70,10 +70,10 @@ EVOSUITE_TESTS_TRANSCODER_PATH = (
 )
 
 EVALUATORS = {
-    "cpp": test_runners.CppInputOutputEvaluator(),
-    "rust": test_runners.RustInputOutputEvaluator(),
-    "go": test_runners.GoInputOutputEvaluator(),
-    "java": test_runners.JavaInputOutputEvaluator(),
+    #"cpp": test_runners.CppInputOutputEvaluator(),
+    #"rust": test_runners.RustInputOutputEvaluator(),
+    #"go": test_runners.GoInputOutputEvaluator(),
+    #"java": test_runners.JavaInputOutputEvaluator(),
 }
 logger = getLogger()
 
@@ -359,7 +359,7 @@ def submit_codenet_functions(functions_list, id, lang, start_lang, data_folder):
     return results_list, id
 
 
-def submit_evosuite_functions(
+'''def submit_evosuite_functions(
     functions_list, id, lang, test_dictionary,
 ):
     assert lang in {"cpp", "python"}, f"{lang} is not supported for evosuite tests"
@@ -383,7 +383,7 @@ def submit_evosuite_functions(
         if result[0] == "success":
             return results_list, id
     return results_list, id
-
+'''
 
 def detokenize_before_running(f, lang_processor, tokenization_mode):
     if tokenization_mode == "fastbpe":
@@ -509,11 +509,12 @@ def eval_function_output(
             for f in hyp_list
         ]
         if tests_type == EVOSUITE:
-            jobs.append(
+            '''jobs.append(
                 executor.submit(
-                    submit_evosuite_functions, hyp_list, i, lang, evosuite_tests[lang],
+                    #submit_evosuite_functions, hyp_list, i, lang, evosuite_tests[lang],
                 )
-            )
+            )'''
+            pass
         elif tests_type == GFG:
             jobs.append(
                 executor.submit(
